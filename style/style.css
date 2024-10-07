@@ -1,3 +1,58 @@
+body {
+     background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+     font-family: sans-serif;
+    }
+h1 { 
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 36px;
+}
+
 h2 {
-    color: red;
+    margin: 0 0 5px;
+    font-size: 28px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 10px;
+
+}
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: rgba(255, 255, 255, 0.701);
+    padding: 30px;
+    box-shadow:10px 5px 5px rgba(100, 100, 111, 0.334);
+    border-radius: 10px; 
+}
+.city {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.city:last-child {
+    border: none;
+}
+.date {
+    opacity: 0.7;
+}
+.time {
+    font-size: 48px;
+    font-weight: bold;
+}
+.time small {
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 48px;
+}
+footer {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.8);
 }
