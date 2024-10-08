@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zia's World Clock Presentation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.js"></script>
     <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
@@ -14,40 +16,40 @@
 
     <select id="countries">
     <option value="">choose a city</option>
-    <option value="beijing">Beijing 🇨🇳</option>
+    <option value="tokyo">Tokyo🇯🇵</option>
     <option value="newyork">New York 🇺🇸</option>
     <option value="london">London🇬🇧</option>
     <option value="sydney">Sydney🇦🇺</option>
     </select>
 
-    <div class="city">
+    <div class="city" id="tokyo">
         <div>
-        <h2>Beijing🇨🇳</h2>
+        <h2>Tokyo🇯🇵</h2>
         <div class="date">October 08th 2024</div>
         </div>
         <div class="time">12:48 <small>PM</small></div>
     </div>
-    <div class="city">
+    <div class="city" id="new-york">
         <div>
         <h2>New York 🇺🇸</h2>
         <div class="date">October 08th 2024</div>
         </div>
         <div class="time">12:48 <small>PM</small></div>
     </div>
-    <div class="city">
+    <!-- <div class="city" id="london">
     <div>
         <h2>London🇬🇧</h2>
         <div class="date">October 08th 2024</div>
         </div>
         <div class="time">12:48 <small>PM</small></div>
     </div>
-    <div class="city">
+    <div class="city" id="sydney">
         <div>
         <h2>Sydney🇦🇺</h2>
         <div class="date">October 08th 2024</div>
         </div>
         <div class="time">12:48 <small>PM</small></div>
-    </div>
+    </div> -->
 </div>
 
     <footer>
