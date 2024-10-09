@@ -19,7 +19,19 @@ newyorkDateElement.innerHTML = moment()
   .format("MMMM Do YYYY");
 newyorkTimeElement.innerHTML = moment()
   .tz("America/New_York")
-  .format("h:mm:ss [<small>]A[</small>]");}
+  .format("h:mm:ss [<small>]A[</small>]");
+  //London
+  let londonDateElement = document.querySelector("#london .date");
+  let londonTimeElement = document.querySelector("#london .time");
+
+  londonDateElement.innerHTML = moment()
+    .tz("Europe/London")
+    .format("MMMM Do YYYY");
+  londonTimeElement.innerHTML = moment()
+    .tz("Europe/London")
+    .format("h:mm:ss [<small>]A[</small>]");
+
+}
 
   function updateCity(event) {
     let cityTimeZone = event.target.value;
